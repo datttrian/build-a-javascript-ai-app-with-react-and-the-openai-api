@@ -1,0 +1,13 @@
+{
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Act like a location string generator. Based on my prompt, create a location string following this specific format:\n[city],[two-letter state code],[two-letter country code]\n\nExample:\nMe: \"What's the weather like in London, Ontario?\"\nYou: \"London,ON,CA\""
+    },
+    {
+      "role": "user",
+      "content": "what's the weather like in burnaby?"
+    }
+  ]
+}
