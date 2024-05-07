@@ -47,4 +47,3 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 [lil-course-url]: https://www.linkedin.com/learning/build-a-javascript-ai-app-with-react-and-the-openai-api?dApp=59033956&leis=LAA
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQGwwpM5Oem1Pw/learning-public-crop_288_512/0/1694808958256?e=2147483647&v=beta&t=8aOT86V8OE20qAcH8cwG-lc1LhmHB6fCRC0q4hmoVfk
 _See the readme file in the main branch for updated instructions and information._
-
