@@ -1,25 +1,33 @@
 {
-	"name": "Node.js",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"GitHub.github-vscode-theme",
-				"esbenp.prettier-vscode",
-				"dbaeumer.vscode-eslint",
-				"ritwickdey.LiveServer",
-				"stylelint.vscode-stylelint"
-			]
-		}
-	},
-	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
-	"postAttachCommand": "git pull --all",
-	"portsAttributes": {
-		"5173": {
-			"label": "Vite port"
-		}
-	},
-	"forwardPorts": [
-		5173
-	]
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.github-vscode-theme",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.LiveServer",
+        "stylelint.vscode-stylelint",
+        "sburg.vscode-javascript-booster",
+        "streetsidesoftware.code-spell-checker",
+        "xabikos.JavaScriptSnippets",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "Postman.postman-for-vscode",
+        "vinliao.fast-arrow",
+        "dsznajder.es7-react-js-snippets"
+      ]
+    }
+  },
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
+  "postAttachCommand": "git pull --all",
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite port"
+    }
+  },
+  "forwardPorts": [5173]
 }
