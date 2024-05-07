@@ -1,13 +1,33 @@
 {
-  "model": "gpt-3.5-turbo",
+  "model": "gpt-3.5-turbo-0613",
   "messages": [
-    {
-      "role": "system",
-      "content": "Act like a location string generator. Based on my prompt, create a location string following this specific format:\n[city],[two-letter state code],[two-letter country code]\n\nExample:\nMe: \"What's the weather like in London, Ontario?\"\nYou: \"London,ON,CA\""
-    },
     {
       "role": "user",
       "content": "what's the weather like in burnaby?"
+    }
+  ],
+  "functions": [
+    {
+      "name": "locationData",
+      "description": "Get the current weather at a given location.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "countryCode": {
+            "type": "string",
+            "description": "Country code. Use ISO-3166"
+          },
+          "state": {
+            "type": "string",
+            "description": "Two-letter state code"
+          },
+          "city": {
+            "type": "string",
+            "description": "City name"
+          }
+        },
+        "required": ["countryCode", "state", "city"]
+      }
     }
   ]
 }
